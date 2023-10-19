@@ -1,0 +1,240 @@
+a<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="550dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:id="@+id/headView"
+                    android:src="@drawable/head0" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:id="@+id/legView"
+                    android:src="@drawable/leg1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/armView"
+                    android:src="@drawable/arm" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/pinView"
+                    android:src="@drawable/pin1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/crownView"
+                    android:src="@drawable/crown1" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/headbandView"
+                    android:src="@drawable/headband1" />
+                <ImageView
+                    android:layout_marginTop="230dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:id="@+id/dressView"
+                    android:src="@drawable/dress1" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/pin1Choose"
+                        android:src="@drawable/pin1" />
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/pin2Choose"
+                        android:src="@drawable/pin2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/crown1Choose"
+                        android:src="@drawable/crown1" />
+
+                    <ImageButton
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/crown2Choose"
+                        android:src="@drawable/crown2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dress up?"
+                android:textColor="#00aa00"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:id="@+id/head1Choose"
+                android:src="@drawable/head1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:id="@+id/head2Choose"
+                android:src="@drawable/head2" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:id="@+id/dress1Choose"
+                android:src="@drawable/dress1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:scaleType="centerCrop"
+                android:id="@+id/dress2Choose"
+                android:src="@drawable/dress2" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerInside"
+                        android:id="@+id/leg1Choose"
+                        android:src="@drawable/leg1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerInside"
+                        android:id="@+id/leg2Choose"
+                        android:src="@drawable/leg2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/headband1Choose"
+                        android:src="@drawable/headband1" />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:scaleType="centerCrop"
+                        android:id="@+id/headband2Choose"
+                        android:src="@drawable/headband2" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00dddd"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/button1"
+        android:text="다시하기" />
+</LinearLayout>
